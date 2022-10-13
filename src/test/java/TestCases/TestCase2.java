@@ -34,13 +34,6 @@ public class TestCase2 {
 		case "Firefox":
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
-			/*
-			 * ProfilesIni profile = new ProfilesIni();
-			 * profile.getProfile("default").setPreference("network.cookie.cookieBehavior",
-			 * 2); FirefoxOptions options = new FirefoxOptions();
-			 * options.setProfile(profile.getProfile("default")); driver = new
-			 * FirefoxDriver(options);
-			 */
 			break;
 		default:
 			throw new Exception("Browser" + BrowserType + " not supported");
@@ -59,14 +52,13 @@ public class TestCase2 {
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		driver.findElement(By.id("wt-cli-accept-all-btn")).click();
 		driver.findElement(By.xpath("//a[@href='https://www.facebook.com/MusalaSoft?fref=ts']")).click();
-		 ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
-		 driver.switchTo().window(newTab.get(1));
+		ArrayList<String> newTab = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(newTab.get(1));
 		Assert.assertEquals(driver.getCurrentUrl(), "https://www.facebook.com/MusalaSoft?fref=ts");
 		Thread.sleep(10000);
-		List <WebElement> photo=driver.findElements(By.xpath("//div/div/div/div/div/div/div[@class='x9f619 x1n2onr6 x1ja2u2z x78zum5 x2lah0s xl56j7k x1qjc9v5 xozqiw3 x1q0g3np x1l90r2v x1ve1bff']/div/div/div/div/div/div/a[@aria-label='Musala Soft profile photo']"));
-		
-		//Assert.assertTrue(photo.isDisplayed(), ":::::::::::");
-		System.out.println(">>>>>>>>>>>>>"+ photo.size());
+		boolean profilePicture = driver.findElements(By.xpath("(//*[name()='image'])[1]")).size() != 0;
+		Assert.assertTrue(profilePicture, "Musala Soft's profile picture does not appear on the new page.");
+		driver.quit();
 	}
 
 }

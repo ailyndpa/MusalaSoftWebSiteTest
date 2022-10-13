@@ -6,13 +6,13 @@
 		<parameter name="BrowserType" value="Chrome" />
 		<classes>
 
-			<class name="TestCases.TestCase1" />
+			<class name="TestCases.TestCase2" />
 		</classes>
 	</test>
-	<test name="Test on Firefox">
+	<!--<test name="Test on Firefox">
 		<parameter name="BrowserType" value="Firefox" />
 		<classes>
-			<class name="TestCases.TestCase1" />
+			<class name="TestCases.TestCase2" />
 		</classes>
-	</test>
+	</test>!-->
 </suite>

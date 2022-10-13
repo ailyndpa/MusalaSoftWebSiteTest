@@ -1,133 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-12T12:02:22 UYT" name="Suite" finished-at="2022-10-12T12:02:52 UYT" duration-ms="29570">
+  <suite started-at="2022-10-13T15:03:06 ART" name="Suite" finished-at="2022-10-13T15:03:41 ART" duration-ms="34607">
     <groups>
     </groups>
-    <test started-at="2022-10-12T12:02:22 UYT" name="Test on Firefox" finished-at="2022-10-12T12:02:30 UYT" duration-ms="7373">
+    <test started-at="2022-10-13T15:03:06 ART" name="Test on Chrome" finished-at="2022-10-13T15:03:41 ART" duration-ms="34607">
       <class name="TestCases.TestCase2">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase2@6574a52c]" started-at="2022-10-12T12:02:22 UYT" name="beforeClass" finished-at="2022-10-12T12:02:30 UYT" duration-ms="7252" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.musala.com/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-2069TN7', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-2069TN7', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at TestCases.TestCase2.beforeClass(TestCase2.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="company()[pri:0, instance:TestCases.TestCase2@6574a52c]" started-at="2022-10-12T12:02:30 UYT" name="company" finished-at="2022-10-12T12:02:30 UYT" duration-ms="0" status="SKIP">
-          <exception class="org.openqa.selenium.SessionNotCreatedException">
-            <message>
-              <![CDATA[Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-2069TN7', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: Failed to decode response from marionette
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'DESKTOP-2069TN7', ip: '192.168.1.12', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}], desiredCapabilities=Capabilities {acceptInsecureCerts: true, browserName: firefox, moz:debuggerAddress: true, moz:firefoxOptions: {}}}]
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:144)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
-at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:67)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:156)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:264)
-at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:179)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:110)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:94)
-at TestCases.TestCase2.beforeClass(TestCase2.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-at java.base/java.lang.reflect.Method.invoke(Method.java:577)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- company -->
-      </class> <!-- TestCases.TestCase2 -->
-    </test> <!-- Test on Firefox -->
-    <test started-at="2022-10-12T12:02:22 UYT" name="Test on Chrome" finished-at="2022-10-12T12:02:52 UYT" duration-ms="29570">
-      <class name="TestCases.TestCase2">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase2@4659191b]" started-at="2022-10-12T12:02:22 UYT" name="beforeClass" finished-at="2022-10-12T12:02:37 UYT" duration-ms="14815" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase2@4c371370]" started-at="2022-10-13T15:03:06 ART" name="beforeClass" finished-at="2022-10-13T15:03:26 ART" duration-ms="19632" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -143,7 +23,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="company()[pri:0, instance:TestCases.TestCase2@4659191b]" started-at="2022-10-12T12:02:37 UYT" name="company" finished-at="2022-10-12T12:02:52 UYT" duration-ms="14710" status="PASS">
+        <test-method signature="company()[pri:0, instance:TestCases.TestCase2@4c371370]" started-at="2022-10-13T15:03:26 ART" name="company" finished-at="2022-10-13T15:03:41 ART" duration-ms="14931" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- company -->
