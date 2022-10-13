@@ -1,0 +1,19 @@
+{
+"emailAddress":[
+	{
+	"email":"usuario.com"
+	},
+	{
+	"email":"usuario@.com"
+	},
+	{
+	"email":"usuario@"
+	},
+	{
+	"email":"usuario@*.com"
+	},
+	{
+	"email":"usuario@gmail.c"
+	}
+]
+}
