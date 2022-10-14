@@ -2,15 +2,16 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="URL" value="http://www.musala.com/"/>
-  <test thread-count="5" parallel="tests" name="Test on Chrome(failed)">
-    <parameter name="BrowserType" value="Chrome"/>
+  <test thread-count="5" parallel="tests" name="Test on Firefox(failed)">
+    <parameter name="BrowserType" value="Firefox"/>
     <classes>
-      <class name="TestCases.TestCase2">
+      <class name="TestCases.TestCase1">
         <methods>
-          <include name="company"/>
+          <include name="After"/>
           <include name="beforeClass"/>
+          <include name="contactUs"/>
         </methods>
-      </class> <!-- TestCases.TestCase2 -->
+      </class> <!-- TestCases.TestCase1 -->
     </classes>
-  </test> <!-- Test on Chrome(failed) -->
+  </test> <!-- Test on Firefox(failed) -->
 </suite> <!-- Failed suite [Suite] -->
