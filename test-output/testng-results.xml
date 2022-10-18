@@ -2,40 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-13T18:00:34 ART" name="Suite" finished-at="2022-10-13T18:01:09 ART" duration-ms="34251">
+  <suite started-at="2022-10-18T10:24:04 ART" name="Suite" finished-at="2022-10-18T10:24:42 ART" duration-ms="38687">
     <groups>
     </groups>
-    <test started-at="2022-10-13T18:00:34 ART" name="Test on Chrome" finished-at="2022-10-13T18:01:04 ART" duration-ms="29740">
+    <test started-at="2022-10-18T10:24:04 ART" name="Test on Firefox" finished-at="2022-10-18T10:24:39 ART" duration-ms="35621">
       <class name="TestCases.TestCase1">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-13T18:00:34 ART" name="beforeClass" finished-at="2022-10-13T18:00:47 ART" duration-ms="12412" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.musala.com/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-13T18:00:47 ART" name="contactUs" finished-at="2022-10-13T18:01:04 ART" duration-ms="17125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactUs -->
-        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-13T18:01:04 ART" name="After" finished-at="2022-10-13T18:01:04 ART" duration-ms="145" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-      </class> <!-- TestCases.TestCase1 -->
-    </test> <!-- Test on Chrome -->
-    <test started-at="2022-10-13T18:00:34 ART" name="Test on Firefox" finished-at="2022-10-13T18:01:09 ART" duration-ms="34251">
-      <class name="TestCases.TestCase1">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@7c7a06ec]" started-at="2022-10-13T18:00:34 ART" name="beforeClass" finished-at="2022-10-13T18:00:49 ART" duration-ms="14280" status="PASS">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:04 ART" name="beforeClass" finished-at="2022-10-18T10:24:20 ART" duration-ms="16189" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,15 +23,43 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@7c7a06ec]" started-at="2022-10-13T18:00:49 ART" name="contactUs" finished-at="2022-10-13T18:01:08 ART" duration-ms="18833" status="PASS">
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:20 ART" name="contactUs" finished-at="2022-10-18T10:24:38 ART" duration-ms="18311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUs -->
-        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@7c7a06ec]" started-at="2022-10-13T18:01:08 ART" name="After" finished-at="2022-10-13T18:01:09 ART" duration-ms="1103" status="PASS">
+        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:38 ART" name="After" finished-at="2022-10-18T10:24:39 ART" duration-ms="1044" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
       </class> <!-- TestCases.TestCase1 -->
     </test> <!-- Test on Firefox -->
+    <test started-at="2022-10-18T10:24:04 ART" name="Test on Chrome" finished-at="2022-10-18T10:24:42 ART" duration-ms="38687">
+      <class name="TestCases.TestCase1">
+        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:04 ART" name="beforeClass" finished-at="2022-10-18T10:24:25 ART" duration-ms="20977" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://www.musala.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:25 ART" name="contactUs" finished-at="2022-10-18T10:24:42 ART" duration-ms="17563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:42 ART" name="After" finished-at="2022-10-18T10:24:42 ART" duration-ms="125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- After -->
+      </class> <!-- TestCases.TestCase1 -->
+    </test> <!-- Test on Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

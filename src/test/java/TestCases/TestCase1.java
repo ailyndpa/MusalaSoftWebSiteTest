@@ -17,14 +17,16 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 
 public class TestCase1 {
 	protected WebDriver driver;
 
-	@BeforeClass
+	@BeforeTest
 	@Parameters({ "URL", "BrowserType" })
-	public void beforeClass(String url, String BrowserType) throws Exception {
+	public void beforeTest(String url, String BrowserType) throws Exception {
 		switch (BrowserType) {
 		case "Chrome":
 			System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver.exe");
