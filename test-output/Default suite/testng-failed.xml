@@ -5,8 +5,9 @@
     <classes>
       <class name="TestCases.TestCase1">
         <methods>
+          <include name="After"/>
+          <include name="beforeTest"/>
           <include name="contactUs"/>
-          <include name="Before"/>
         </methods>
       </class> <!-- TestCases.TestCase1 -->
     </classes>

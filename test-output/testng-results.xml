@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-18T10:24:04 ART" name="Suite" finished-at="2022-10-18T10:24:42 ART" duration-ms="38687">
+  <suite started-at="2022-10-19T01:18:29 ART" name="Suite" finished-at="2022-10-19T01:18:52 ART" duration-ms="23094">
     <groups>
     </groups>
-    <test started-at="2022-10-18T10:24:04 ART" name="Test on Firefox" finished-at="2022-10-18T10:24:39 ART" duration-ms="35621">
+    <test started-at="2022-10-19T01:18:29 ART" name="Test on Firefox" finished-at="2022-10-19T01:18:52 ART" duration-ms="23094">
       <class name="TestCases.TestCase1">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:04 ART" name="beforeClass" finished-at="2022-10-18T10:24:20 ART" duration-ms="16189" status="PASS">
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:29 ART" name="beforeTest" finished-at="2022-10-19T01:18:44 ART" duration-ms="15192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,44 +22,258 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:20 ART" name="contactUs" finished-at="2022-10-18T10:24:38 ART" duration-ms="18311" status="PASS">
+        </test-method> <!-- beforeTest -->
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:44 ART" name="contactUs" finished-at="2022-10-19T01:18:50 ART" duration-ms="5889" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- contactUs -->
-        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3c46e67a]" started-at="2022-10-18T10:24:38 ART" name="After" finished-at="2022-10-18T10:24:39 ART" duration-ms="1044" status="PASS">
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:50 ART" name="contactUs" finished-at="2022-10-19T01:18:50 ART" duration-ms="99" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at TestCases.TestCase1.contactUs(TestCase1.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:50 ART" name="contactUs" finished-at="2022-10-19T01:18:51 ART" duration-ms="147" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at TestCases.TestCase1.contactUs(TestCase1.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:51 ART" name="contactUs" finished-at="2022-10-19T01:18:51 ART" duration-ms="165" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: Element <span> is not clickable at point (1135,247) because another element <div id="fancybox-overlay"> obscures it
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, clickElement {id=700d63a8-c239-4e4c-8eff-5e0e9cfe9370}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //button[@type='button']/span[text()='Contact us']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at TestCases.TestCase1.contactUs(TestCase1.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:51 ART" name="contactUs" finished-at="2022-10-19T01:18:52 ART" duration-ms="1471" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[The element reference of <span class="wpcf7-not-valid-tip"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, getElementText {id=c2745d0e-2705-4b7f-bf10-d45b8ee03bf2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //span[@class='wpcf7-not-valid-tip']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element reference of <span class="wpcf7-not-valid-tip"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-59EA1U5', ip: '192.168.1.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [f00e6c96-b24f-4ed9-980c-b8d61c110e2c, getElementText {id=c2745d0e-2705-4b7f-bf10-d45b8ee03bf2}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 105.0.3, moz:accessibilityChecks: false, moz:buildID: 20221007134813, moz:debuggerAddress: 127.0.0.1:53867, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24740, moz:profile: C:\Users\user\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:53867/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (f00e6c96-b24f-4ed9-980c-b8d61c110e2c)] -> xpath: //span[@class='wpcf7-not-valid-tip']]
+Session ID: f00e6c96-b24f-4ed9-980c-b8d61c110e2c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:207)
+at TestCases.TestCase1.contactUs(TestCase1.java:67)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contactUs -->
+        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-19T01:18:52 ART" name="After" finished-at="2022-10-19T01:18:52 ART" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- After -->
       </class> <!-- TestCases.TestCase1 -->
     </test> <!-- Test on Firefox -->
-    <test started-at="2022-10-18T10:24:04 ART" name="Test on Chrome" finished-at="2022-10-18T10:24:42 ART" duration-ms="38687">
-      <class name="TestCases.TestCase1">
-        <test-method is-config="true" signature="beforeClass(java.lang.String,java.lang.String)[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:04 ART" name="beforeClass" finished-at="2022-10-18T10:24:25 ART" duration-ms="20977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[http://www.musala.com/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="contactUs()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:25 ART" name="contactUs" finished-at="2022-10-18T10:24:42 ART" duration-ms="17563" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- contactUs -->
-        <test-method is-config="true" signature="After()[pri:0, instance:TestCases.TestCase1@3023df74]" started-at="2022-10-18T10:24:42 ART" name="After" finished-at="2022-10-18T10:24:42 ART" duration-ms="125" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- After -->
-      </class> <!-- TestCases.TestCase1 -->
-    </test> <!-- Test on Chrome -->
   </suite> <!-- Suite -->
 </testng-results>
